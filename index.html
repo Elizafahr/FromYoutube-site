@@ -151,9 +151,9 @@
                         <p>ЖК LoftHouse – это проект бизнес-класса, расположенный в центре города, на Наб. реки Фонтанки 10-15. Комплекс предлагает своим жильцам квартиры площадью от 40 до 170 кв. м. В здании будет три секции, в которых разместится всего 56 квартир.</p>
                     </div>
                     <div class="cta__form">
-                        <form action="" class="form">
-                            <input type="text" placeholder="Ваше имя" class="form__input">
-                            <input type="text" data-tel-input placeholder="Ваш телефон" class="form__input">
+                        <form action="php/form-handler.php" method="post" class="form">
+                            <input type="text" placeholder="Ваше имя" id="name" name="name" class="form__input">
+                            <input type="text" data-tel-input placeholder="Ваш телефон" id="phone" name="phone"  class="form__input">
                             <p class="form__privacy">*Мы никому не передаем ваши данные. 
                                 И не сохраняем ваш номер в базу.</p>
                                 <button type="submit" class="form__btn">Посмотреть район</button>
@@ -196,12 +196,12 @@
             <div class="container">
                 <div class="feedback__title">
                     <h2 class="title-2">Есть вопросы?</h2>
-                    <form action="" class="feedback__form form">
+                    <form action="php/form-handler.php" class="feedback__form form">
                         <p class="form__privacy">*Мы никому не передаем ваши данные. 
                             И не сохраняем ваш номер в базу.</p>
-                        <input type="text" placeholder="Ваше имя" class="form__input">
-                        <input type="text" data-tel-input placeholder="Ваш телефон" class="form__input">
-                        
+                            <input type="text" placeholder="Ваше имя" id="name" name="name" class="form__input">
+                            <input type="text" data-tel-input placeholder="Ваш телефон" id="phone" name="phone"  class="form__input">
+                            
                             <button type="submit" class="form__btn">Посмотреть район</button>
                     </form>
                  </div>
@@ -264,7 +264,7 @@
         </div>
     </div>
     </main>
-
+  
     <script src="https://api-maps.yandex.ru/2.1/?apikey=4f537583-9ef9-4998-a98b-9a6ee160a9d3&lang=ru_RU" type="text/javascript"></script>
 
     <script src="./libs/phoneMask/mask.js"></script>
@@ -274,6 +274,7 @@
         <script src="js/main.js"></script>
 
 
+        
 </body>
 
 </html>
